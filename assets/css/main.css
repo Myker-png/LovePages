@@ -206,12 +206,6 @@ body{
     box-shadow: -20px 20px 150px #f20044;
     animation: palpitar 0.5s linear infinite alternate;
   }
-  .contenido{
-    position: fixed;
-    margin-bottom: 10%;
-    left: 20%;
-    text-align: center;
-  }
   h1{color: white;}
   h2{color: white;}
   @keyframes palpitar{
