@@ -209,7 +209,7 @@ body{
   .contenido{
     position: fixed;
     margin-bottom: 50px;
-    left: 250px;
+    left: center;
     text-align: center;
   }
   h1{color: white;}
