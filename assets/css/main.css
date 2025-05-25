@@ -208,8 +208,8 @@ body{
   }
   .contenido{
     position: fixed;
-    margin-bottom: 10%;
-    left: 40%;
+    margin-bottom: 5%;
+    left: 50%;
     text-align: center;
   }
   h1{color: white;}
