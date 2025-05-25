@@ -177,8 +177,8 @@
   font-size: 4.5em;
   height: auto;
   width: auto;
-  top: -72px;
-  left: 520px;
+  top: -72%;
+  left: 520%;
   animation: 1s giro alternate infinite;
 }
 @keyframes giro-p {
@@ -209,7 +209,7 @@ body{
   .contenido{
     position: fixed;
     margin-bottom: 50px;
-    left: 250%;
+    left: 50%;
     text-align: center;
   }
   h1{color: white;}
