@@ -1,0 +1,246 @@
+/*Accedemos al container principal*/
+.container{
+    position: absolute;
+    width: 600px;/*Ancho y alto*/
+    height: 100px;
+    /*le damos un borde para verlo*/
+    border: 3px solid purple;
+    /*vamos a central el contenedor con las siguientes propiedades*/
+    top: 40px;
+    margin: auto;
+    /*le damos sobra al contenedor*/
+    -webkit-box-shadow:-13px 9px 104px 17px rgba(128,0,255,0.24);
+    -moz-box-shadow:-13px 9px 104px 17px rgba(128,0,255,0.24);
+    /*rendodeamos el borde del contenedor*/
+    border-radius: 20px;
+}
+/*ingresamos el conteiner y luego todos los parrafos*/
+.container p{
+    color: #A020F0;
+    font-size: 4em;/*Tamaño de fuente*/
+    margin-bottom: 100px;
+    top: -50px;
+}
+/*vamos a ingresar todas las letras con la clase letra1*/
+.letra1{
+    /*le vamos a dar una sombra que parezca 3D*/
+    text-shadow: 0 1px 0 #1a1919,
+                    0 2px 0 #1a1919,
+                    0 3px 0 #1a1919,
+                    0 4px 0 #1a1919,
+                    0 5px 0 #1a1919,
+                    0 6px 1px rgba(0,0,0,0.1),
+                    0 0px 5px rgba(0,0,0,0.1),
+                    0 1px 3px rgba(0,0,0,0.3),
+                    0 1px 1px rgba(0,0,0,0.2),
+                    0 5px 10px rgba(0,0,0,0.25),
+                    0 10px 10px rgba(0,0,0,0.2),
+                    0 30px 20px rgba(0,0,0,0.15);
+}
+/*ahora vamos acceder a cada letra y le vamos a dar su animacion y vamos a posicionar cada una*/
+.letra1{
+    position: absolute;
+    /*usamos absolute para hacer referencia de la letra anterior*/
+    left: 10px;
+    animation: alternate/*con esto creamos la animacion de giro*/;
+}
+@keyframes giro{
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg);
+  }
+}
+/*pasamos letra por letra*/
+#e{
+  position: absolute;
+  left: 50px;
+  animation: alternate;
+}
+@keyframes giro-e {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#a{
+  position: absolute;
+  left: 110px;
+  animation: alternate;
+}
+@keyframes giro-a {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#q{
+  position: absolute;
+  left: 150px;
+  animation: alternate;
+}
+@keyframes giro-q {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#w{
+  position: absolute;
+  left: 200px;
+  animation: alternate;
+}
+@keyframes giro-w {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#r{
+  position: absolute;
+  left: 260px;
+  animation: alternate;
+}
+@keyframes giro-r {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#t{
+  position: absolute;
+  left: 310px;
+  animation: alternate;
+}
+@keyframes giro-t {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#y{
+  position: absolute;
+  left: 350px;
+  animation: alternate;
+}
+@keyframes giro-y {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#u{
+  position: absolute;
+  left: 390px;
+  animation: alternate;
+}
+@keyframes giro-u {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#i{
+  position: absolute;
+  left: 440px;
+  animation: alternate;
+}
+@keyframes giro-i {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#o{
+  position: absolute;
+  left: 480px;
+  animation: alternate;
+}
+@keyframes giro-o {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+#p{
+  color: red;
+  font-size: 4.5em;
+  height: auto;
+  width: auto;
+  top: -72px;
+  left: 520px;
+  animation: 1s giro alternate infinite;
+}
+@keyframes giro-p {
+  from{
+      transform: rotateY(0);
+  }to{
+      transform: rotateY(360deg)
+  }
+}
+body{
+    background: #0b1522;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+  .heart{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -20px 20px 150px #f20044;
+    animation: palpitar 0.5s linear infinite alternate;
+  }
+  .contenido{
+    position: fixed;
+    margin-bottom: 50px;
+    left: 250px;
+    text-align: center;
+  }
+  h1{color: white;}
+  h2{color: white;}
+  @keyframes palpitar{
+    0%{transform: rotate(45deg) scale(1.10);}
+    80%{transform: rotate(45deg) scale(1.0);}
+    100%{transform: rotate(45deg) scale(0.8);}
+  }
+  .heart::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    right: 50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+  }
+  .heart::after{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: red;
+    top: -50%;
+    border-radius: 50%;
+    box-shadow: 20px 20px 150px #f20044;
+  }
+body{
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
